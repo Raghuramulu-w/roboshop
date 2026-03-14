@@ -19,20 +19,20 @@ metadata:
  labels: 
    app: catalogue
    project: roboshop
-   tier: db
+   tier: app
 spec:
   replicas: 1
   selector:
    matchLabels:
     app: catalogue
     project: roboshop
-    tier: db
+    tier: app
   template:
    metadata:
     labels: 
       app: catalogue
       project: roboshop
-      tier: db
+      tier: app
    spec:
     containers: 
     - name: catalogue
