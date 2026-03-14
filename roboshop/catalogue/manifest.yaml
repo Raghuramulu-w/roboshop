@@ -9,7 +9,7 @@ metadata:
  name: my-config
  namespace: roboshop
 data:
- MONGO: "TRUE"
+ MONGO: "true"
 ---
 apiVersion: apps/v1
 kind: Deployment

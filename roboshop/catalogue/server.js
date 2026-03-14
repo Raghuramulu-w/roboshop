@@ -172,7 +172,7 @@ function mongoConnect() {
 
 // mongodb connection retry loop
 function mongoLoop() {
-    mongoConnected().then((r) => {
+    mongoConnect().then((r) => {
         mongoConnected = true;
         logger.info('MongoDB connected');
     }).catch((e) => {
